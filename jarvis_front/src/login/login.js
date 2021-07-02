@@ -22,7 +22,7 @@ async function loginRequest(e){
         pseudo : document.getElementById("username").value,
         password : document.getElementById("password").value
     };
-     let res = await axios.post('http://localhost:4500/login', request).catch(err => {
+     let res = await axios.post('http://192.168.0.37:4500/login', request).catch(err => {
         console.error(err);
     });
     console.log(res);

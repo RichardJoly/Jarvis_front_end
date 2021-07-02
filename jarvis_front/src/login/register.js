@@ -22,7 +22,7 @@ function registerRequest(e){
         pseudo : document.getElementById("username").value,
         password : document.getElementById("password").value
     };
-    axios.post('/register', request).then(resp => {
+    axios.post('http://192.168.0.37:4500/register', request).then(resp => {
         alert(resp.data.message);
     })
     .catch(err => {
